@@ -113,6 +113,8 @@ public class SEC {
     sb.append("Order Sent: <" + orderType + " symbol=\"" + symbol + "\" amount=\"" + amount + "\" />");
     sb.append("Amount: " + totalCost + "\n");
 
+    System.out.println(sb.toString());
+
     logSuspicions(sb.toString());
   }
 

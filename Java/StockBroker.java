@@ -95,7 +95,7 @@ public class StockBroker {
       doc, XPathConstants.STRING);
 
     String reply = processOrder(stock, amount, transactionCheck);
-
+    System.out.println(reply);
     nc.publish(msg.getReplyTo(), reply.getBytes());
   }
 
@@ -103,14 +103,18 @@ public class StockBroker {
   private static String processOrder(String stock, String amount, boolean transactionType) {
     int price = marketPrices.get(stock);
     int cost = price * Integer.parseInt(amount);
+    System.out.println("Amount: " + amount + ",Price: " + price);
+    System.out.println("Cost: " + cost);
     int transactionFee = cost / 10;
     int totalTransactionCost = 0;
 
     if (transactionType) {
       totalTransactionCost = cost + transactionFee;
+      System.out.println("Buy" + totalTransactionCost);
       return buildReply("buy", stock, amount, totalTransactionCost);
     } else {
       totalTransactionCost = cost - transactionFee;
+      System.out.println("Sell" + totalTransactionCost);
       return buildReply("sell", stock, amount, totalTransactionCost);
     }
   }

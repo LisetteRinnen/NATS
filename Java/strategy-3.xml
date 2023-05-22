@@ -1,0 +1,11 @@
+<!-- A very tech-centric strategy -->
+<strategy>
+  <when><stock>ACTV</stock><above>2000</above><sell /></when>
+  <when><stock>BLIZ</stock><above>3000</above><sell /></when>
+  <when><stock>ROVIO</stock><above>6000</above><sell /></when>
+  <when><stock>FDX</stock><above>4000</above><sell /></when>
+  <when><stock>ACTV</stock><below>1000</below><buy>500</buy></when>
+  <when><stock>BLIZ</stock><below>3000</below><buy>500</buy></when>
+  <when><stock>ROVIO</stock><below>4000</below><buy>500</buy></when>
+  <when><stock>FDX</stock><below>2000</below><buy>500</buy></when>
+</strategy>

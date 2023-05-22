@@ -1,0 +1,11 @@
+<!-- A very tech-centric strategy -->
+<strategy>
+  <when><stock>APPL</stock><above>4000</above><sell /></when>
+  <when><stock>NVDA</stock><above>5000</above><sell /></when>
+  <when><stock>ADBE</stock><above>3000</above><sell /></when>
+  <when><stock>INTC</stock><above>4000</above><sell /></when>
+  <when><stock>APPL</stock><below>2500</below><buy>500</buy></when>
+  <when><stock>NVDA</stock><below>4000</below><buy>500</buy></when>
+  <when><stock>ADBE</stock><below>25000</below><buy>500</buy></when>
+  <when><stock>INTC</stock><below>1000</below><buy>500</buy></when>
+</strategy>

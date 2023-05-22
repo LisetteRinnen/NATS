@@ -1,0 +1,11 @@
+<!-- A very tech-centric strategy -->
+<strategy>
+  <when><stock>GE</stock><above>4000</above><sell /></when>
+  <when><stock>GMC</stock><above>5000</above><sell /></when>
+  <when><stock>F</stock><above>3000</above><sell /></when>
+  <when><stock>TSLA</stock><above>6000</above><sell /></when>
+  <when><stock>GE</stock><below>3000</below><buy>500</buy></when>
+  <when><stock>GMC</stock><below>4000</below><buy>500</buy></when>
+  <when><stock>F</stock><below>2000</below><buy>500</buy></when>
+  <when><stock>TSLA</stock><below>4000</below><buy>500</buy></when>
+</strategy>
